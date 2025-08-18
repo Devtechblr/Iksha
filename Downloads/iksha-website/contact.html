@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Iksha Designs & Engineering</title>
+  <!-- Tailwind (CDN for quick preview) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
+    .navlink { @apply hover:underline underline-offset-4 decoration-2; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
+      <a href="index.html" class="flex items-center space-x-2">
+        <div class="w-9 h-9 rounded-xl bg-[#50BBE2] grid place-items-center text-white font-bold">ID</div>
+        <span class="text-lg font-semibold">Iksha Designs & Engineering</span>
+      </a>
+      <ul class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <li><a class="navlink " href="index.html">Home</a></li>
+        <li><a class="navlink " href="about.html">About Us</a></li>
+        <li><a class="navlink " href="services.html">Products & Services</a></li>
+        <li><a class="navlink text-[#50BBE2]" href="contact.html">Contact</a></li>
+      </ul>
+      <button id="menuBtn" class="md:hidden inline-flex items-center p-2 rounded-lg border text-gray-600 hover:bg-gray-50">Menu</button>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <ul class="px-4 py-3 space-y-2 text-sm">
+        <li><a class="block py-2 " href="index.html">Home</a></li>
+        <li><a class="block py-2 " href="about.html">About Us</a></li>
+        <li><a class="block py-2 " href="services.html">Products & Services</a></li>
+        <li><a class="block py-2 text-[#50BBE2]" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+<!-- Hero -->
+<section class="relative">
+  <img src="images/contact.svg" alt="Contact" class="w-full h-[40vh] object-cover">
+  <div class="absolute inset-0 bg-[#50BBE2]/70"></div>
+  <div class="absolute inset-0 flex items-center justify-center">
+    <h1 class="text-white text-4xl md:text-5xl font-bold" data-aos="fade-up">Contact Us</h1>
+  </div>
+</section>
+
+<!-- Contact details + form -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid md:grid-cols-2 gap-10">
+  <div data-aos="fade-right">
+    <h2 class="text-2xl font-bold text-[#50BBE2] mb-4">Get in touch</h2>
+    <div class="space-y-2 text-sm">
+      <p><strong>Phone:</strong> +91-94492-62225</p>
+      <p><strong>Email:</strong> ramesh@gaitcorp.in</p>
+      <p><strong>Address:</strong> #26A, Muneeswara Layout, 5th Cross, Near SEA College Arch, K.R. Puram, Bangalore</p>
+    </div>
+    <div class="mt-6">
+      <iframe class="w-full h-64 rounded-xl border" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=K.R.%20Puram%2C%20Bangalore&output=embed"></iframe>
+    </div>
+  </div>
+  <form class="bg-white border rounded-2xl p-6 shadow-sm space-y-4" data-aos="fade-left">
+    <div>
+      <label class="block text-sm font-medium mb-1">Name</label>
+      <input type="text" class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-[#50BBE2]" placeholder="Your name">
+    </div>
+    <div>
+      <label class="block text-sm font-medium mb-1">Email</label>
+      <input type="email" class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-[#50BBE2]" placeholder="you@example.com">
+    </div>
+    <div>
+      <label class="block text-sm font-medium mb-1">Message</label>
+      <textarea class="w-full border rounded-lg p-2 h-28 focus:outline-none focus:ring-2 focus:ring-[#50BBE2]" placeholder="How can we help?"></textarea>
+    </div>
+    <button type="button" class="w-full py-2.5 rounded-lg bg-[#50BBE2] text-white font-semibold hover:opacity-95">Send Message</button>
+    <p class="text-xs text-gray-500">This is a static form. Connect it to your backend or a service like Formspree to receive messages.</p>
+  </form>
+</section>
+
+  <!-- Footer -->
+  <footer class="mt-16 border-t">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center text-sm text-gray-500">
+      <p>&copy; 2025 Iksha Designs & Engineering • ISO 9001:2015 Certified</p>
+    </div>
+  </footer>
+  <!-- AOS + Menu Toggle -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 900, once: true });
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    if (btn) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>

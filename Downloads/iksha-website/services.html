@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products & Services - Iksha Designs & Engineering</title>
+  <!-- Tailwind (CDN for quick preview) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Open Sans', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
+    .navlink { @apply hover:underline underline-offset-4 decoration-2; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
+      <a href="index.html" class="flex items-center space-x-2">
+        <div class="w-9 h-9 rounded-xl bg-[#50BBE2] grid place-items-center text-white font-bold">ID</div>
+        <span class="text-lg font-semibold">Iksha Designs & Engineering</span>
+      </a>
+      <ul class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <li><a class="navlink " href="index.html">Home</a></li>
+        <li><a class="navlink " href="about.html">About Us</a></li>
+        <li><a class="navlink text-[#50BBE2]" href="services.html">Products & Services</a></li>
+        <li><a class="navlink " href="contact.html">Contact</a></li>
+      </ul>
+      <button id="menuBtn" class="md:hidden inline-flex items-center p-2 rounded-lg border text-gray-600 hover:bg-gray-50">Menu</button>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t">
+      <ul class="px-4 py-3 space-y-2 text-sm">
+        <li><a class="block py-2 " href="index.html">Home</a></li>
+        <li><a class="block py-2 " href="about.html">About Us</a></li>
+        <li><a class="block py-2 text-[#50BBE2]" href="services.html">Products & Services</a></li>
+        <li><a class="block py-2 " href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+<!-- Hero -->
+<section class="relative">
+  <img src="images/mould-design.svg" alt="Products & Services" class="w-full h-[40vh] object-cover">
+  <div class="absolute inset-0 bg-[#50BBE2]/70"></div>
+  <div class="absolute inset-0 flex items-center justify-center">
+    <h1 class="text-white text-4xl md:text-5xl font-bold" data-aos="fade-up">Products & Services</h1>
+  </div>
+</section>
+
+<!-- Intro -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <p class="max-w-4xl text-center mx-auto" data-aos="fade-up">
+    We specialize in New Product Development and precision manufacturing spanning Aluminium & Zinc HPDC, Gravity Die Casting, Plastic Injection Moulding, and complete Mould Design/Development/Maintenance.
+  </p>
+</section>
+
+<!-- Cards -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+  <!-- Mould Design -->
+  <article class="group rounded-2xl border overflow-hidden bg-white shadow-sm hover:shadow-xl transition" data-aos="zoom-in">
+    <div class="relative overflow-hidden">
+      <img src="images/mould-design.svg" alt="Mould Design/Development/Maintenance" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+    </div>
+    <div class="p-6">
+      <h3 class="text-xl font-semibold text-[#50BBE2] mb-2">Mould Design / Development / Maintenance</h3>
+      <p class="text-sm text-gray-600">Advanced modeling reduces lead time and errors. Engineering assistance for NPD, product design, reverse engineering & manufacturing feasibility. Tools deliver maximum productivity and extended life.</p>
+    </div>
+  </article>
+
+  <!-- HPDC -->
+  <article class="group rounded-2xl border overflow-hidden bg-white shadow-sm hover:shadow-xl transition" data-aos="zoom-in" data-aos-delay="100">
+    <div class="relative overflow-hidden">
+      <img src="images/hpdc.svg" alt="Cold Chamber HPDC" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+    </div>
+    <div class="p-6">
+      <h3 class="text-xl font-semibold text-[#50BBE2] mb-2">Cold Chamber Horizontal High Pressure Die Casting (HPDC)</h3>
+      <p class="text-sm text-gray-600">High precision Aluminium & Zinc components with consistent dimensional accuracy and surface finish for demanding applications.</p>
+    </div>
+  </article>
+
+  <!-- Gravity Die Casting -->
+  <article class="group rounded-2xl border overflow-hidden bg-white shadow-sm hover:shadow-xl transition" data-aos="zoom-in" data-aos-delay="150">
+    <div class="relative overflow-hidden">
+      <img src="images/gravity-casting.svg" alt="Gravity Die Casting" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+    </div>
+    <div class="p-6">
+      <h3 class="text-xl font-semibold text-[#50BBE2] mb-2">Gravity Die Casting</h3>
+      <p class="text-sm text-gray-600">Reliable, cost-effective casting suited for medium-volume production with excellent mechanical properties.</p>
+    </div>
+  </article>
+
+  <!-- Plastic Injection Moulding -->
+  <article class="group rounded-2xl border overflow-hidden bg-white shadow-sm hover:shadow-xl transition" data-aos="zoom-in" data-aos-delay="200">
+    <div class="relative overflow-hidden">
+      <img src="images/plastic-moulding.svg" alt="Plastic Injection Moulding" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+    </div>
+    <div class="p-6">
+      <h3 class="text-xl font-semibold text-[#50BBE2] mb-2">Plastic Injection Moulding</h3>
+      <p class="text-sm text-gray-600">High-quality parts with tight tolerances, consistent color, and repeatability for automotive, electronics, and consumer applications.</p>
+    </div>
+  </article>
+
+  <!-- New Product Development -->
+  <article class="group rounded-2xl border overflow-hidden bg-white shadow-sm hover:shadow-xl transition" data-aos="zoom-in" data-aos-delay="250">
+    <div class="relative overflow-hidden">
+      <img src="images/new-product.svg" alt="New Product Development" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+    </div>
+    <div class="p-6">
+      <h3 class="text-xl font-semibold text-[#50BBE2] mb-2">New Product Development</h3>
+      <p class="text-sm text-gray-600">Concept-to-production including prototyping, validation, and scalable manufacturing with rigorous quality processes.</p>
+    </div>
+  </article>
+</section>
+
+  <!-- Footer -->
+  <footer class="mt-16 border-t">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center text-sm text-gray-500">
+      <p>&copy; 2025 Iksha Designs & Engineering • ISO 9001:2015 Certified</p>
+    </div>
+  </footer>
+  <!-- AOS + Menu Toggle -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 900, once: true });
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    if (btn) btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
