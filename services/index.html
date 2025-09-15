@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>IKSHA Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#f8fbfb] font-sans">
+    <!-- Header -->
+    <header class="flex items-center justify-between border-b px-10 py-3 bg-white shadow">
+      <div class="flex items-center gap-3">
+        <!-- increased logo size, no hover glow here -->
+        <img src="logo.png" alt="IKSHA Logo" class="h-16 w-auto">
+        <h2 class="text-lg font-bold text-[#0e171b]">IKSHA Designs and Engineering</h2>
+      </div>
+      <nav class="flex gap-8">
+        <a href="#" class="hover:text-[#3bb3e3] transition">Home</a>
+        <a href="#" class="hover:text-[#3bb3e3] transition">Services</a>
+        <a href="#" class="hover:text-[#3bb3e3] transition">About Us</a>
+        <a href="#" class="hover:text-[#3bb3e3] transition">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="text-center py-20 bg-gradient-to-r from-[#0095CD] to-[#41B4DD] text-white overflow-hidden">
+      <h1 class="text-5xl font-black mb-3 opacity-0 animate-on-scroll delay-200">Our Engineering Services</h1>
+      <p class="text-xl opacity-0 animate-on-scroll delay-500">Comprehensive engineering solutions tailored to your needs</p>
+    </section>
+
+    <!-- Services -->
+    <section class="px-12 py-10 space-y-12">
+      <!-- Service 1 -->
+      <div class="flex flex-col md:flex-row items-center gap-6 bg-white py-8 px-6 rounded-lg">
+        <!-- image-only hover glow (img-glow class) -->
+        <img src="service1.jpg" alt="Mould Design"
+             class="w-[800px] h-[256px] object-scale-down rounded-lg shadow-lg opacity-0 animate-on-scroll slide-left img-glow">
+        <div class="md:w-1/2 opacity-0 animate-on-scroll slide-up">
+          <h3 class="text-2xl font-bold mb-2">Mould Design and Development</h3>
+          <p class="text-gray-600 mb-3">Expert mould design ensuring maximum productivity and minimum errors.</p>
+          <button onclick="toggleDescription('service1desc')" class="bg-[#3bb3e3] px-4 py-2 rounded-lg font-medium text-sm hover:scale-105 transition">Know More</button>
+          <div id="service1desc" class="hidden mt-3 text-gray-700 space-y-3">
+            <p>Our Design Department employs highly skilled Engineers capable of using the most advanced modelling software so that it ensures the lead time of New Product Development, mould Development and parts manufacturing and the potential for human error is also greatly reduced.</p>
+            <p>Our professional staff of Design Engineers provide you innovative ideas you need to ensure your product’s success. And Engineering assistance for New Product Development, Product design, Reverse Engineering & Manufacturing feasibility.</p>
+            <p>We have excellent Design Engineers and Tool makers for manufacturing of Tools.</p>
+            <p>The outcome are Tools that ensures Maximum Productivity, Minimum Rejection, Minimum Secondary Operations, Extended Tool Life and Ease of Maintenance throughout the life of the Tool.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-6 bg-gray-50 py-8 px-6 rounded-lg">
+        <img src="service2.jpg" alt="HPDC"
+             class="w-[800px] h-[256px] object-scale-down rounded-lg shadow-lg opacity-0 animate-on-scroll slide-right img-glow">
+        <div class="md:w-1/2 opacity-0 animate-on-scroll slide-up">
+          <h3 class="text-2xl font-bold mb-2">Cold Chamber Horizontal High Pressure Die Casting (HPDC)</h3>
+          <p class="text-gray-600 mb-3">High-precision die casting with smooth surfaces and accuracy.</p>
+          <button onclick="toggleDescription('service2desc')" class="bg-[#3bb3e3] px-4 py-2 rounded-lg font-medium text-sm hover:scale-105 transition">Know More</button>
+          <div id="service2desc" class="hidden mt-3 text-gray-700 space-y-3">
+            <p>IKSHA Designs and Engineering is leading provider of die casting services across India. Our team of engineers, technicians, and quality control experts work together, ensuring that your product gets done right and on time.</p>
+            <p>We focus on new die casting technologies to produce complex parts with excellent dimensional accuracy and smooth cast surfaces. We can produce a casting from 3 grams to 2.5 kgs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="flex flex-col md:flex-row items-center gap-6 bg-white py-8 px-6 rounded-lg">
+        <img src="service3.jpg" alt="Gravity Casting"
+             class="w-[800px] h-[256px] object-scale-down rounded-lg shadow-lg opacity-0 animate-on-scroll slide-left img-glow">
+        <div class="md:w-1/2 opacity-0 animate-on-scroll slide-up">
+          <h3 class="text-2xl font-bold mb-2">Gravity Die Casting</h3>
+          <p class="text-gray-600 mb-3">Precision-engineered gravity die casting tailored to requirements.</p>
+          <button onclick="toggleDescription('service3desc')" class="bg-[#3bb3e3] px-4 py-2 rounded-lg font-medium text-sm hover:scale-105 transition">Know More</button>
+          <div id="service3desc" class="hidden mt-3 text-gray-700 space-y-3">
+            <p>We offer precision Engineered Gravity dies and castings as per the customer requirement either with the help of drawings or from sample products.</p>
+            <p>Casting ranges we can produce from 0.050 kgs to 12 kgs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-6 bg-gray-50 py-8 px-6 rounded-lg">
+        <img src="service4.jpg" alt="Plastic Moulding"
+             class="w-[800px] h-[256px] object-scale-down rounded-lg shadow-lg opacity-0 animate-on-scroll slide-right img-glow">
+        <div class="md:w-1/2 opacity-0 animate-on-scroll slide-up">
+          <h3 class="text-2xl font-bold mb-2">Plastic Injection Moulding</h3>
+          <p class="text-gray-600 mb-3">Premium quality plastic mould parts delivered with precision.</p>
+          <button onclick="toggleDescription('service4desc')" class="bg-[#3bb3e3] px-4 py-2 rounded-lg font-medium text-sm hover:scale-105 transition">Know More</button>
+          <div id="service4desc" class="hidden mt-3 text-gray-700 space-y-3">
+            <p>Plastic Injection Mould Parts we offer are highly qualitative and made in confirmation with the specific norms. Material of premium quality is used in manufacturing process and we try our best to deliver our range within specific time-period.</p>
+            <p>The company is an expert in moulding engineering, commodity, and speciality plastic raw materials. This includes the Nylone6 Family inclusive of Glass filled, LDPE and HDPE, Acrylic, Nylon (GF Filled and unfilled grades), Polycarbonates, ABS (Filled and unfilled grades), Acetal / Delrin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="px-6 py-16 bg-white relative">
+      <h2 class="text-3xl font-bold text-center mb-16 opacity-0 animate-on-scroll slide-up">Our Process</h2>
+      <div class="relative max-w-2xl mx-auto">
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#41B4DD]/40"></div>
+
+        <!-- Steps without card hover (only images have glow) -->
+        <div class="mb-12 flex items-center w-full process-step-left opacity-0 animate-on-scroll slide-left rounded-lg p-4">
+          <div class="w-1/2 pr-8 text-right">
+            <h3 class="text-xl font-semibold mb-2">Discovery</h3>
+            <p class="text-gray-600">Understanding your requirements and project scope</p>
+          </div>
+          <div class="relative">
+            <div class="bg-[#41B4DD] text-white rounded-full w-14 h-14 flex items-center justify-center font-bold text-lg shadow-lg animate-pulse">1</div>
+          </div>
+          <div class="w-1/2"></div>
+        </div>
+
+        <div class="mb-12 flex items-center w-full process-step-right opacity-0 animate-on-scroll slide-right rounded-lg p-4">
+          <div class="w-1/2"></div>
+          <div class="relative">
+            <div class="bg-[#41B4DD] text-white rounded-full w-14 h-14 flex items-center justify-center font-bold text-lg shadow-lg animate-pulse">2</div>
+          </div>
+          <div class="w-1/2 pl-8 text-left">
+            <h3 class="text-xl font-semibold mb-2">Design</h3>
+            <p class="text-gray-600">Creating detailed technical specifications and plans</p>
+          </div>
+        </div>
+
+        <div class="mb-12 flex items-center w-full process-step-left opacity-0 animate-on-scroll slide-left rounded-lg p-4">
+          <div class="w-1/2 pr-8 text-right">
+            <h3 class="text-xl font-semibold mb-2">Development</h3>
+            <p class="text-gray-600">Engineering implementation and prototyping</p>
+          </div>
+          <div class="relative">
+            <div class="bg-[#41B4DD] text-white rounded-full w-14 h-14 flex items-center justify-center font-bold text-lg shadow-lg animate-pulse">3</div>
+          </div>
+          <div class="w-1/2"></div>
+        </div>
+
+        <div class="mb-12 flex items-center w-full process-step-right opacity-0 animate-on-scroll slide-right rounded-lg p-4">
+          <div class="w-1/2"></div>
+          <div class="relative">
+            <div class="bg-[#41B4DD] text-white rounded-full w-14 h-14 flex items-center justify-center font-bold text-lg shadow-lg animate-pulse">4</div>
+          </div>
+          <div class="w-1/2 pl-8 text-left">
+            <h3 class="text-xl font-semibold mb-2">Delivery</h3>
+            <p class="text-gray-600">Testing, validation, and final project handover</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="bg-[#41B4DD] text-white text-center py-16 opacity-0 animate-on-scroll slide-up">
+      <h2 class="text-3xl font-bold mb-4">Need Help With Your Project?</h2>
+      <p class="mb-8 text-lg">Our expert team is ready to collaborate and bring your ideas to life.</p>
+      <a href="#contact" class="inline-block bg-white text-[#41B4DD] font-semibold px-8 py-3 rounded-full shadow-lg transition-transform transform hover:scale-110 hover:bg-gray-100">
+        Get in Touch
+      </a>
+    </section>
+
+    <!-- Footer -->
+<footer class="bg-white border-t mt-8 py-6">
+  <div class="max-w-6xl mx-auto px-10 text-center text-gray-600">
+    © <strong>IKSHA Designs &amp; Engineering</strong> — All rights reserved.  
+    Powered by 
+    <a href="http://devcreationsblr.com" target="_blank" 
+       class="text-blue-600 font-semibold hover:text-blue-800 underline transition">
+       Dev Creations and Solutions
+    </a>
+  </div>
+</footer>
+
+
+    <!-- Script -->
+    <script>
+      function toggleDescription(id) {
+        const desc = document.getElementById(id);
+        desc.classList.toggle("hidden");
+        desc.classList.toggle("animate-slide");
+      }
+
+      // Scroll-triggered animations
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-active");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      document.querySelectorAll(".animate-on-scroll").forEach((el) => observer.observe(el));
+    </script>
+
+    <!-- Animations & image-glow styles -->
+    <style>
+      .animate-slide { animation: slideDown 0.5s ease-out; }
+      @keyframes slideDown { from { max-height: 0; opacity: 0; } to { max-height: 1000px; opacity: 1; } }
+
+      .animate-on-scroll { transition: all 1s ease-out; opacity: 0; transform: translate(0,0); }
+      .animate-on-scroll.animate-active { opacity: 1; transform: translate(0,0); }
+
+      .slide-up { transform: translateY(30px); }
+      .slide-left { transform: translateX(-60px); }
+      .slide-right { transform: translateX(60px); }
+
+      .delay-200 { transition-delay: 0.2s; }
+      .delay-500 { transition-delay: 0.5s; }
+
+      /* IMAGE-ONLY hover glow + zoom */
+      .img-glow {
+        transition: transform 320ms cubic-bezier(.2,.9,.2,1), box-shadow 320ms cubic-bezier(.2,.9,.2,1), filter 320ms ease;
+        will-change: transform, box-shadow, filter;
+      }
+      .img-glow:hover {
+        transform: translateZ(0) scale(1.06);
+        /* layered glow for stronger effect */
+        box-shadow:
+          0 6px 18px rgba(65,180,221,0.18),
+          0 0 40px rgba(65,180,221,0.14),
+          inset 0 0 0 1px rgba(65,180,221,0.06);
+        filter: drop-shadow(0 6px 18px rgba(65,180,221,0.18));
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>IKSHA Designs & Engineering — About</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      /* Fade-up effect for elements */
+      .fade-up {
+        opacity: 0;
+        transform: translateY(22px);
+        transition: all 0.8s cubic-bezier(.2,.8,.2,1);
+      }
+      .fade-up.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Hover cards */
+      .card-hover {
+        transition: all 0.35s cubic-bezier(.2,.9,.2,1);
+        will-change: transform, box-shadow;
+      }
+      .card-hover:hover {
+        transform: translateY(-8px) scale(1.04);
+        box-shadow: 0 8px 28px rgba(0,149,205,0.45);
+        border: 1px solid rgba(0,149,205,0.55);
+      }
+
+      /* Hover for images */
+      .img-hover {
+        transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+        will-change: transform, box-shadow, filter;
+      }
+      .img-hover:hover {
+        transform: scale(1.07);
+        box-shadow: 0 0 25px rgba(0,149,205,0.45);
+        filter: brightness(1.08);
+      }
+
+      /* Accordion arrow */
+      details summary::-webkit-details-marker { display: none; }
+      .summary-arrow {
+        transition: transform 0.25s ease;
+      }
+      details[open] .summary-arrow {
+        transform: rotate(90deg);
+      }
+
+      /* small quality pill */
+      .quality-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.35rem 0.6rem;
+        border-radius: 9999px;
+        font-weight: 700;
+        font-size: 0.85rem;
+        transition: all 0.3s ease;
+      }
+      .quality-pill:hover {
+        transform: scale(1.06);
+        box-shadow: 0 0 10px rgba(0,149,205,0.35);
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#f8fbfb] font-sans text-[#0e171b]">
+    <!-- Header -->
+    <header class="flex items-center justify-between border-b px-10 py-4 bg-white shadow-sm sticky top-0 z-40">
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="IKSHA Logo" class="h-18 w-auto object-contain img-hover">
+        <h1 class="text-lg md:text-xl font-extrabold">IKSHA Designs &amp; Engineering</h1>
+      </div>
+
+      <nav class="hidden md:flex gap-8 items-center text-gray-700">
+        <a href="#" class="hover:text-[#0b9ed2] transition">Home</a>
+        <a href="#" class="hover:text-[#0b9ed2] transition">Services</a>
+        <a href="#" class="hover:text-[#0b9ed2] transition">About Us</a>
+        <a href="#" class="hover:text-[#0b9ed2] transition">Contact</a>
+      </nav>
+      <!-- mobile nav toggle placeholder -->
+      <div class="md:hidden">
+        <button aria-label="Open menu" class="p-2 rounded-md bg-white shadow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative text-center py-20 bg-cover bg-center text-white overflow-hidden" 
+      style="background-image: url('about-bg.jpg');">
+      <div class="absolute inset-0 bg-black/50"></div> <!-- overlay for readability -->
+
+      <div class="relative max-w-4xl mx-auto px-6">
+        <h2 class="text-5xl md:text-6xl font-extrabold mb-3 fade-up">About IKSHA</h2>
+        <p class="text-lg md:text-xl fade-up">Delivering excellence in engineering and design since conception</p>
+      </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section class="px-6 md:px-10 py-14">
+      <div class="max-w-5xl mx-auto fade-up">
+        <div class="bg-white shadow-lg rounded-2xl p-8 card-hover">
+          <h3 class="text-3xl font-bold text-[#0e171b] mb-4">Who We Are</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            <strong>Iksha Designs &amp; Engg.</strong> is an ISO certified company for New Product Development, manufacturing of Aluminium, Zinc die casting, Plastic Injection Moulding, and mould manufacturing. We offer our customers End to End solutions ranging from Prototyping, Reverse Engineering, Tool Designing &amp; Manufacturing, Die Casting, Shot Blasting, Vibro Polishing, Powder Coating, Assembly &amp; multi process Foundry services.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Iksha Designs &amp; Engg. delivers best-in-class New Product Development, Aluminium &amp; Zinc Pressure Die Casting, Gravity Die Casting, Plastic Injection Moulding and Mould Design &amp; Development.
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="quality-pill bg-[#e8f8ff] text-[#006f9c]">ISO 9001:2015</span>
+            <span class="quality-pill bg-[#fff4e8] text-[#9a6b00]">End-to-End Solutions</span>
+            <span class="quality-pill bg-[#f2fff6] text-[#0a7a32]">Mould Design &amp; Manufacturing</span>
+          </div>
+        </div>
+
+        <!-- Image below -->
+        <div class="mt-8 flex justify-center fade-up">
+          <img src="who-we-are.jpg" alt="Iksha - Who We Are" class="rounded-xl shadow-xl w-[90%] max-h-[420px] object-cover img-hover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision -->
+<section class="px-6 md:px-10 py-12 bg-gradient-to-r from-[#d0f0fd] to-[#a0d8f7] rounded-2xl">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="fade-up">
+      <h3 class="text-3xl font-bold text-[#0095CD] mb-4">Our Vision</h3>
+      <p class="text-gray-800 leading-relaxed">
+        To become a global leader in engineering design and manufacturing services, delivering innovation, precision, and sustainability that exceed client expectations.
+      </p>
+    </div>
+    <div class="flex justify-center fade-up">
+      <img src="vision.jpg" alt="Vision" class="rounded-xl shadow-xl w-[70%] max-h-[320px] object-cover img-hover">
+    </div>
+  </div>
+</section>
+<!-- Mission -->
+<section class="px-6 md:px-10 py-12 bg-[#e0f5ff]">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Image card -->
+    <div class="flex justify-start order-2 md:order-1 fade-up">
+      <div class="bg-white rounded-2xl p-4 shadow-xl w-[70%] max-h-[340px] flex items-center justify-center">
+        <img src="mission.jpg" alt="Mission" 
+             class="rounded-xl object-contain max-h-[320px] img-hover">
+      </div>
+    </div>
+
+    <!-- Text content -->
+    <div class="order-1 md:order-2 fade-up">
+      <h3 class="text-3xl font-bold text-[#0077b6] mb-4">Our Mission</h3>
+      <p class="text-gray-800 leading-relaxed">
+        To provide cutting-edge engineering solutions with integrity, quality, and innovation, empowering industries with sustainable growth and competitive advantage.
+      </p>
+      <div class="mt-6 flex gap-3">
+        <span class="quality-pill bg-[#e6f5ff] text-[#0077b6]">Innovation</span>
+        <span class="quality-pill bg-[#d0ebff] text-[#005f99]">Quality-driven</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Core Values -->
+    <section class="px-6 md:px-10 py-16 bg-gradient-to-r from-[#74D2F5] to-[#3BB2E0] text-white">
+      <div class="max-w-4xl mx-auto text-center fade-up">
+        <h3 class="text-3xl md:text-4xl font-bold mb-3">Our Core Values</h3>
+        <p class="mb-8 text-lg">The principles that drive us forward</p>
+      </div>
+
+      <div class="max-w-4xl mx-auto space-y-6 fade-up">
+        <!-- each value has card-hover -->
+        <div class="timeline-item bg-white/10 rounded-xl p-6 shadow-md flex items-start gap-4 card-hover">
+          <div class="timeline-badge bg-white text-[#0e171b]">✅</div>
+          <div>
+            <h4 class="font-bold text-lg">Honesty</h4>
+            <p class="mt-1 text-white/90">We prioritize transparent and trustworthy dealings with clients and partners.</p>
+          </div>
+        </div>
+        <div class="timeline-item bg-white/10 rounded-xl p-6 shadow-md flex items-start gap-4 card-hover">
+          <div class="timeline-badge bg-white text-[#0e171b]">💬</div>
+          <div>
+            <h4 class="font-bold text-lg">Open Communication</h4>
+            <p class="mt-1 text-white/90">Clear communication is the backbone of successful engineering delivery.</p>
+          </div>
+        </div>
+        <div class="timeline-item bg-white/10 rounded-xl p-6 shadow-md flex items-start gap-4 card-hover">
+          <div class="timeline-badge bg-white text-[#0e171b]">⚖️</div>
+          <div>
+            <h4 class="font-bold text-lg">Integrity &amp; Fairness</h4>
+            <p class="mt-1 text-white/90">We ensure fair decisions across projects and partnerships.</p>
+          </div>
+        </div>
+        <div class="timeline-item bg-white/10 rounded-xl p-6 shadow-md flex items-start gap-4 card-hover">
+          <div class="timeline-badge bg-white text-[#0e171b]">🚀</div>
+          <div>
+            <h4 class="font-bold text-lg">Competency &amp; Willingness</h4>
+            <p class="mt-1 text-white/90">Skilled teams ready to learn and adapt for client success.</p>
+          </div>
+        </div>
+        <div class="timeline-item bg-white/10 rounded-xl p-6 shadow-md flex items-start gap-4 card-hover">
+          <div class="timeline-badge bg-white text-[#0e171b]">🤝</div>
+          <div>
+            <h4 class="font-bold text-lg">Promise to Customer</h4>
+            <p class="mt-1 text-white/90">We deliver what we commit — reliably and consistently.</p>
+          </div>
+        </div>
+        <div class="timeline-item bg-white/10 rounded-xl p-6 shadow-md flex items-start gap-4 card-hover">
+          <div class="timeline-badge bg-white text-[#0e171b]">📚</div>
+          <div>
+            <h4 class="font-bold text-lg">Learning</h4>
+            <p class="mt-1 text-white/90">Continuous improvement via training and research-driven practices.</p>
+          </div>
+        </div>
+        <div class="timeline-item bg-white/10 rounded-xl p-6 shadow-md flex items-start gap-4 card-hover">
+          <div class="timeline-badge bg-white text-[#0e171b]">⭐</div>
+          <div>
+            <h4 class="font-bold text-lg">Quality</h4>
+            <p class="mt-1 text-white/90">Committed to standards and zero-defect delivery across all processes.</p>
+          </div>
+        </div>
+        <div class="timeline-item bg-white/10 rounded-xl p-6 shadow-md flex items-start gap-4 card-hover">
+          <div class="timeline-badge bg-white text-[#0e171b]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a4 4 0 004 4h10a4 4 0 004-4V7" />
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg">Research &amp; Development</h4>
+            <p class="mt-1 text-white/90">We invest in R&amp;D to innovate materials, processes and tooling for better outcomes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality & Research -->
+    <section class="px-6 md:px-10 py-16 max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-8 text-[#0095CD] fade-up">Quality &amp; Research</h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Left -->
+        <div class="space-y-4 fade-up">
+          <details class="bg-white shadow-md rounded-xl p-6 card-hover">
+            <summary class="cursor-pointer font-bold text-lg text-[#0e171b] flex justify-between items-center">
+              <span>Quality Control</span>
+              <svg class="summary-arrow h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </summary>
+            <p class="mt-3 text-gray-600 leading-relaxed">
+              Our organization is an ISO 9001:2015 certified entity, engaged in New Product Development, manufacturing services and supplying Aluminium and Zinc Casting, Gravity Casting, Plastic Injection Moulding and Die/Mould design &amp; Development. We continually enhance quality through proper understanding of customer requirements and compliance with standards.
+            </p>
+          </details>
+
+          <details class="bg-white shadow-md rounded-xl p-6 card-hover">
+            <summary class="cursor-pointer font-bold text-lg text-[#0e171b] flex justify-between items-center">
+              <span>Quality Assurance</span>
+              <svg class="summary-arrow h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </summary>
+            <p class="mt-3 text-gray-600 leading-relaxed">
+              Being a quality-conscious organization, we offer superior product ranges developed with advanced machinery and methods. Our quality assurance ensures zero-defect products that meet international standards of design and performance.
+            </p>
+          </details>
+
+          <details class="bg-white shadow-md rounded-xl p-6 card-hover">
+            <summary class="cursor-pointer font-bold text-lg text-[#0e171b] flex justify-between items-center">
+              <span>Our Quality Policy</span>
+              <svg class="summary-arrow h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </summary>
+            <p class="mt-3 text-gray-600 leading-relaxed">
+              We are extremely rigid about delivering products of the right quality. Every product undergoes 100% checking from the manufacturing stage to dispatch.
+            </p>
+          </details>
+
+          <details class="bg-white shadow-md rounded-xl p-6 card-hover">
+            <summary class="cursor-pointer font-bold text-lg text-[#0e171b] flex justify-between items-center">
+              <span>Research &amp; Development</span>
+              <svg class="summary-arrow h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </summary>
+            <p class="mt-3 text-gray-600 leading-relaxed">
+              At IKSHA, we aim to stay ahead through innovation in research &amp; development, adopting new techniques for consistent growth and leadership in the market. Our R&amp;D works closely with production teams to optimize tooling, material selection and finishing processes.
+            </p>
+          </details>
+        </div>
+
+        <!-- Right -->
+        <div class="fade-up">
+          <div class="bg-white rounded-2xl p-6 shadow-lg card-hover">
+            <h4 class="text-xl font-bold mb-3">Quality Highlights</h4>
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <div class="text-sm font-semibold">ISO Compliance</div>
+                  <div class="text-sm text-gray-500">Maintained</div>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                  <div class="h-3 rounded-full" style="width:98%; background:linear-gradient(90deg,#0095CD,#41B4DD)"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-2">
+                  <div class="text-sm font-semibold">Zero Defect Initiatives</div>
+                  <div class="text-sm text-gray-500">Active</div>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                  <div class="h-3 rounded-full" style="width:76%; background:linear-gradient(90deg,#41B4DD,#0095CD)"></div>
+                </div>
+              </div>
+
+              <div>
+                <h5 class="font-semibold mt-2 mb-2">Manufacturing Capabilities</h5>
+                <ul class="list-disc ml-5 text-gray-700">
+                  <li>Aluminium &amp; Zinc Pressure Die Casting</li>
+                  <li>Gravity Die Casting &amp; Shot Blasting</li>
+                  <li>Plastic Injection Moulding &amp; Mould Design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-6 shadow-lg mt-6 card-hover">
+            <h4 class="text-lg font-bold mb-3">R&amp;D Focus Areas</h4>
+            <div class="grid grid-cols-1 gap-3">
+              <div class="p-3 rounded-lg bg-[#f5fbff]">Lightweight material optimization for castings</div>
+              <div class="p-3 rounded-lg bg-[#fff7f0]">Sustainable surface finishing &amp; energy-efficient tooling</div>
+              <div class="p-3 rounded-lg bg-[#f3fff5]">Process automation &amp; zero-defect manufacturing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="bg-white border-t mt-8 py-6">
+  <div class="max-w-6xl mx-auto px-10 text-center text-gray-600">
+    © <strong>IKSHA Designs &amp; Engineering</strong> — All rights reserved.  
+    Powered by 
+    <a href="http://devcreationsblr.com" target="_blank" 
+       class="text-blue-600 font-semibold hover:text-blue-800 underline transition">
+       Dev Creations and Solutions
+    </a>
+  </div>
+</footer>
+
+
+    <!-- Fade-up script -->
+    <script>
+      (function() {
+        const fadeEls = document.querySelectorAll('.fade-up');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.18 });
+
+        fadeEls.forEach(el => observer.observe(el));
+      })();
+    </script>
+  </body>
+</html>
